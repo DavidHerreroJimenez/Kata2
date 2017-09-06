@@ -1,6 +1,7 @@
 package com.davidherrerojimenez.kata2;
 
 import com.davidherrerojimenez.kata2.data.ApiService;
+import com.davidherrerojimenez.kata2.fragments.MainFragmentComponent;
 
 import dagger.Module;
 import dagger.Provides;
@@ -11,7 +12,7 @@ import dagger.Provides;
  * Created by udhj1a on 06/09/2017 17:02.
  */
 
-@Module
+@Module(subcomponents = MainFragmentComponent.class)
 public class MainActivityModule {
 
     @Provides
